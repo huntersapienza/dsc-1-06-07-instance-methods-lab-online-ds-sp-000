@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="3" name="pytest" skips="0" tests="3" time="0.501"><testcase classname="pytests.test_index" file="pytests/test_index.py" line="3" name="test_instance_types" time="0.0013113021850585938"><failure message="NameError: name &apos;Driver&apos; is not defined">def test_instance_types():
+&gt;       assert type(meryl) == type(Driver())
+E       NameError: name &apos;Driver&apos; is not defined
+
+pytests/test_index.py:5: NameError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="9" name="test_variables" time="0.0029327869415283203"><failure message="AssertionError: assert None == &apos;Hey, how are you?&apos;">def test_variables():
+&gt;       assert polite_greeting == &quot;Hey, how are you?&quot;
+E       AssertionError: assert None == &apos;Hey, how are you?&apos;
+
+pytests/test_index.py:11: AssertionError</failure></testcase><testcase classname="pytests.test_index" file="pytests/test_index.py" line="13" name="test_instance_methods" time="0.0010044574737548828"><failure message="AttributeError: &apos;NoneType&apos; object has no attribute &apos;greeting&apos;">def test_instance_methods():
+&gt;       assert daniel.greeting() == &quot;Hey, how are you?&quot;
+E       AttributeError: &apos;NoneType&apos; object has no attribute &apos;greeting&apos;
+
+pytests/test_index.py:15: AttributeError</failure></testcase></testsuite>
